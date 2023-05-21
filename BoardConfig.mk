@@ -53,6 +53,8 @@ TW_EXTRA_LANGUAGES := false
 TARGET_IS_64_BIT := true                      # true/false: Determine if the device is 64-bit or not
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 # AVB
 BOARD_AVB_ENABLE := true
