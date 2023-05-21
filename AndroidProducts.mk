@@ -1,7 +1,18 @@
-# Replace $$DEVICE$$ with your Device Name's Value.
-# Replace $$BRAND$$ with your Brand's / Manufacturer's Value.
-# The part of last line in mine looks like "omni_Primo_RX5.mk"
+#
+# Copyright (C) 2021 The Android Open Source Project
+# Copyright (C) 2021 SebaUbuntu's TWRP device tree generator
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-LOCAL_PATH := $(call my-dir)
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/lineage_RMX3395.mk \
+    $(LOCAL_DIR)/omni_RMX3395.mk
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_RMX3395.mk
+COMMON_LUNCH_CHOICES := \
+    lineage_RMX3395-user \
+    lineage_RMX3395-userdebug \
+    lineage_RMX3395-eng \
+    omni_RMX3395-user \
+    omni_RMX3395-userdebug \
+    omni_RMX3395-eng

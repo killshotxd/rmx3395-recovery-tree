@@ -5,8 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/realme/RMX3395
+LOCAL_PATH := $(call my-dir)
 
-PRODUCT_PACKAGES += fastbootd
-
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+ifeq ($(TARGET_DEVICE),RMX3395)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif
